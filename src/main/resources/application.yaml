@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    username:
+    url: jdbc:postgresql://localhost:5432/booking
+    password:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: 'true'
+  database:
+    driverClassName: org.postgresql.Driver
+server:
+  error:
+    include-message: always
